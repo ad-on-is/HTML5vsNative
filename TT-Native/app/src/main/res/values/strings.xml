@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TT-Native</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="clients_array">
+        <item>BauMaxx</item>
+        <item>McDonalds</item>
+        <item>Hofer</item>
+        <item>BurgerKing</item>
+        <item>KFC</item>
+    </string-array>
+
+</resources>

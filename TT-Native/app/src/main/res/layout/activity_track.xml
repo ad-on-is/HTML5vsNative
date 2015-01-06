@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#2c3e50"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".TrackActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:id="@+id/ctWrapper"
+        android:tag="ctWrapper"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="45dp"
+            android:textColor="#fff"
+            android:id="@+id/currentTime"
+            android:background="@drawable/rb_green"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:width="250dp"
+            android:height="250dp"
+            android:layout_marginBottom="-125dp"
+            android:paddingBottom="80dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="195dp"
+        android:id="@+id/pbWrapper"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAUSE"
+            android:textSize="35dp"
+            android:textColor="#fff"
+            android:id="@+id/pauseButton"
+            android:background="@drawable/rb_red"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:width="250dp"
+            android:height="250dp"
+            android:layout_marginTop="-125dp"
+            android:paddingTop="110dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="380dp"
+        android:id="@+id/stbWrapper"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/stopButton"
+            android:background="@drawable/rb_purple"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:width="100dp"
+            android:height="100dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:baselineAligned="false">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="text"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="TT"
+            android:textSize="30dp"
+            android:textColor="#16a085"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:inputType="text"
+            android:text="Native"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:textColor="#2ecc71"
+            />
+    </LinearLayout>
+</RelativeLayout>
